@@ -10,11 +10,11 @@ class ChipThemeApp {
     selectedColor: Colors.blue,
     labelStyle: const TextStyle(color: Colors.black),
   );
-  static ChipThemeData darklightChipThemeData = ChipThemeData(
+  static ChipThemeData darkChipThemeData = const ChipThemeData(
     disabledColor: Colors.grey,
     selectedColor: Colors.blue,
-    padding: const EdgeInsets.all(12),
+    padding: EdgeInsets.all(12),
     checkmarkColor: Colors.white,
-    labelStyle: const TextStyle(color: Colors.white),
+    labelStyle: TextStyle(color: Colors.white),
   );
 }

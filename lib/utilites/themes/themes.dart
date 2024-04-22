@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../app_manager/local_data.dart';
 import 'custom_themes/app_bar_theme.dart';
 import 'custom_themes/bootmsheet_theme.dart';
 import 'custom_themes/checkbox_theme.dart';
@@ -15,7 +16,7 @@ class TThemesApp {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     useMaterial3: true,
-    primaryColor: Colors.blue,
+    primaryColor: primaryColor,
     fontFamily: 'Poppins',
     inputDecorationTheme: TextFormFieldThemeApp.lightInputDecorationTheme,
     checkboxTheme: CheckBoxThemeApp.lightCheckboxTheme,
@@ -34,11 +35,11 @@ class TThemesApp {
     outlinedButtonTheme: OutlinedButtonThemeApp.darkOutlinedButtonThemeData,
     inputDecorationTheme: TextFormFieldThemeApp.darkInputDecorationTheme,
     fontFamily: 'Poppins',
-    chipTheme: ChipThemeApp.darklightChipThemeData,
+    chipTheme: ChipThemeApp.darkChipThemeData,
     checkboxTheme: CheckBoxThemeApp.darkCheckboxTheme,
     bottomSheetTheme: BottomSheetThemeApp.darkBottomSheetTheme,
     appBarTheme: AppBarThemesApp.darkAppBarThemesApp,
-    primaryColor: Colors.blue,
+    primaryColor: primaryColor,
     scaffoldBackgroundColor: Colors.black,
     elevatedButtonTheme: ElevatedButtonThemeApp.darkElevatedButtonThemeData,
   );

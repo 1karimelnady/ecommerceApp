@@ -25,8 +25,8 @@ const Gradient gradient = LinearGradient(
 
 //Background colors
 
-const Color light = Color(0xFFF6F6F6);
-const Color dark = Color(0xFF272727);
+const Color lightColor = Color(0xFFF6F6F6);
+const Color darkColor = Color(0xFF272727);
 const Color primaryBackground = Color(0xFFF3F5FF);
 
 //Background CONTAINERS COLORS

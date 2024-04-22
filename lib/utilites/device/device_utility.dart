@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -43,8 +43,16 @@ class DeviceUtils {
     return MediaQuery.of(context).devicePixelRatio;
   }
 
+  static double getBottomNavigationBarHeight() {
+    return kBottomNavigationBarHeight;
+  }
+
   static double getStatusBarHeight(BuildContext context) {
     return MediaQuery.of(context).padding.top;
+  }
+
+  static double getAppBarHeight(BuildContext context) {
+    return kToolbarHeight;
   }
 
   static double getKeyboardHeight(BuildContext context) {
@@ -92,6 +100,10 @@ class DeviceUtils {
 
   static bool isAndroid() {
     return Platform.isAndroid;
+  }
+
+  static bool isDarkMode(BuildContext context) {
+    return Theme.of(context).brightness == Brightness.dark;
   }
 
   static bool isIos() {

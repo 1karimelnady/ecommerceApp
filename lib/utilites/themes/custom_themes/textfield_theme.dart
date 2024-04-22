@@ -7,66 +7,66 @@ class TextFormFieldThemeApp {
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
-    labelStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    errorStyle: TextStyle().copyWith(
+    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    errorStyle: const TextStyle().copyWith(
       fontWeight: FontWeight.normal,
     ),
-    floatingLabelStyle: TextStyle().copyWith(
+    floatingLabelStyle: const TextStyle().copyWith(
       color: Colors.black.withOpacity(0.8),
     ),
-    border: OutlineInputBorder().copyWith(
+    border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey, width: 1),
+      borderSide: const BorderSide(color: Colors.grey, width: 1),
     ),
-    enabledBorder: OutlineInputBorder().copyWith(
+    enabledBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey, width: 1),
+      borderSide: const BorderSide(color: Colors.grey, width: 1),
     ),
-    focusedBorder: OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.black12, width: 1),
+      borderSide: const BorderSide(color: Colors.black12, width: 1),
     ),
-    errorBorder: OutlineInputBorder().copyWith(
+    errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.red, width: 1),
+      borderSide: const BorderSide(color: Colors.red, width: 1),
     ),
-    focusedErrorBorder: OutlineInputBorder().copyWith(
+    focusedErrorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.orange, width: 2),
+      borderSide: const BorderSide(color: Colors.orange, width: 2),
     ),
   );
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 2,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
-    labelStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    errorStyle: TextStyle().copyWith(
+    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    errorStyle: const TextStyle().copyWith(
       fontWeight: FontWeight.normal,
     ),
-    floatingLabelStyle: TextStyle().copyWith(
+    floatingLabelStyle: const TextStyle().copyWith(
       color: Colors.black.withOpacity(0.8),
     ),
-    border: OutlineInputBorder().copyWith(
+    border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey, width: 1),
+      borderSide: const BorderSide(color: Colors.grey, width: 1),
     ),
-    enabledBorder: OutlineInputBorder().copyWith(
+    enabledBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey, width: 1),
+      borderSide: const BorderSide(color: Colors.grey, width: 1),
     ),
-    focusedBorder: OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.black12, width: 1),
+      borderSide: const BorderSide(color: Colors.black12, width: 1),
     ),
-    errorBorder: OutlineInputBorder().copyWith(
+    errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.red, width: 1),
+      borderSide: const BorderSide(color: Colors.red, width: 1),
     ),
-    focusedErrorBorder: OutlineInputBorder().copyWith(
+    focusedErrorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.orange, width: 2),
+      borderSide: const BorderSide(color: Colors.orange, width: 2),
     ),
   );
 }

@@ -42,6 +42,8 @@ dependencies:
   url_launcher: ^6.2.6
   shared_preferences: ^2.2.3
   flutter_native_splash: 2.3.11
+  smooth_page_indicator: ^1.1.0
+  dio: ^5.4.3+1
 
 dev_dependencies:
   flutter_test:
