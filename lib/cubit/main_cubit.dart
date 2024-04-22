@@ -34,7 +34,13 @@ class MainCubit extends Cubit<MainStates> {
     if (currentIndex == 2) {
       RoutesManager.navigatorAndRemove(context, const Test());
     } else {
-      pageController.jumpToPage(page);
+      currentIndex = page;
+      pageController.animateToPage(
+        currentIndex,
+        duration: const Duration(
+            milliseconds: 500), // Adjust animation duration as needed
+        curve: Curves.easeInOut, // Adjust animation curve as needed
+      );
     }
   }
 
