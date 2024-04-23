@@ -1,7 +1,10 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/screens/AuthScreen/Register/widgets/terms_and_conditions_checkbox.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../verfiy_email.dart';
 
 class RegisterForm extends StatelessWidget {
   const RegisterForm({
@@ -90,7 +93,9 @@ class RegisterForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                RoutesManager.navigatorAndRemove(context, VerifyEmailScreen());
+              },
               child: const Text('Create Account'),
             ),
           ),

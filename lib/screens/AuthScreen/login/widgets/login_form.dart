@@ -3,6 +3,8 @@ import 'package:ecommerce_app/screens/AuthScreen/Register/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../forget_password.dart';
+
 class LoginForm extends StatelessWidget {
   const LoginForm({
     super.key,
@@ -45,7 +47,10 @@ class LoginForm extends StatelessWidget {
                 ),
                 TextButton(
                   child: const Text('forget password?'),
-                  onPressed: () {},
+                  onPressed: () {
+                    RoutesManager.navigatorPush(
+                        context, const ForgetPasswordScreen());
+                  },
                 )
               ],
             ),
