@@ -11,6 +11,11 @@ const Color textPrimaryColor = Color(0xFF333333);
 const Color textSecondaryColor = Color(0xFF6C757D);
 const Color textWhite = Colors.white;
 
+//logo
+
+const darkLogo = "assets/images/dark_logo.png";
+const lightLogo = "assets/images/light_logo.png";
+
 //GRADIENT COLORS
 
 const Gradient gradient = LinearGradient(

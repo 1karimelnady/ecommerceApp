@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../app_manager/routes_manager.dart';
-import '../test_screen.dart';
+import '../screens/AuthScreen/login/login_screen.dart';
 import 'application_state/main_states.dart';
 
 class MainCubit extends Cubit<MainStates> {
@@ -25,21 +25,17 @@ class MainCubit extends Cubit<MainStates> {
     emit(UpdateDotNavigationState());
   }
 
-  // if (currentIndex == 2) {
-  // RoutesManager.navigatorAndRemove(context, const Test());
-  // } else {
   nextPage(context) {
     int page = currentIndex + 1;
 
     if (currentIndex == 2) {
-      RoutesManager.navigatorAndRemove(context, const Test());
+      RoutesManager.navigatorAndRemove(context, const LoginScreen());
     } else {
       currentIndex = page;
       pageController.animateToPage(
         currentIndex,
-        duration: const Duration(
-            milliseconds: 500), // Adjust animation duration as needed
-        curve: Curves.easeInOut, // Adjust animation curve as needed
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
       );
     }
   }
