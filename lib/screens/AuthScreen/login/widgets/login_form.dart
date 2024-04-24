@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/app_manager/routes_manager.dart';
+import 'package:ecommerce_app/navigation_menu.dart';
 import 'package:ecommerce_app/screens/AuthScreen/Register/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -60,7 +61,10 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  RoutesManager.navigatorAndRemove(
+                      context, const NavigationMenu());
+                },
                 child: const Text('Sign in'),
               ),
             ),

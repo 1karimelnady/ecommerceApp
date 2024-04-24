@@ -1,6 +1,9 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utilites/device/device_utility.dart';
+import 'forget_password.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});
@@ -8,6 +11,18 @@ class ResetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            onPressed: () {
+              RoutesManager.navigatorAndRemove(
+                  context, const ForgetPasswordScreen());
+            },
+            icon: const Icon(CupertinoIcons.clear),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -41,22 +56,22 @@ class ResetPasswordScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text('Done'),
+                  child: const Text('Done'),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               TextButton(
                 onPressed: () {},
-                child: Text('Resend Email'),
+                child: const Text('Resend Email'),
               ),
             ],
           ),
