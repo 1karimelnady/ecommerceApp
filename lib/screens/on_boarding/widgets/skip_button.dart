@@ -17,7 +17,7 @@ class OnBoardingSkipButton extends StatelessWidget {
       builder: (context, state) {
         var cubit = MainCubit.get(context);
         return Positioned(
-          top: DeviceUtils.getAppBarHeight(context),
+          top: DeviceUtils.getAppBarHeight(),
           right: 24,
           child: TextButton(
             onPressed: () => cubit.skipPage(),

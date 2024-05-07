@@ -51,7 +51,7 @@ class DeviceUtils {
     return MediaQuery.of(context).padding.top;
   }
 
-  static double getAppBarHeight(BuildContext context) {
+  static double getAppBarHeight() {
     return kToolbarHeight;
   }
 

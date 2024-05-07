@@ -22,7 +22,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
         indicatorColor: dark
             ? Colors.white.withOpacity(0.1)
             : Colors.black.withOpacity(0.1),
-        backgroundColor: dark ? Colors.white : Colors.black,
+        backgroundColor: dark ? Colors.black : Colors.white,
         elevation: 0,
         selectedIndex: selectedIndex,
         onDestinationSelected: (index) {
