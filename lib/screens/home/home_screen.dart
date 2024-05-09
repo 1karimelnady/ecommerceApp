@@ -45,10 +45,13 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        const SectionHeading(
-                          showActionButton: false,
-                          textColor: Colors.white,
-                          title: 'Popular Categories',
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24.0),
+                          child: const SectionHeading(
+                            showActionButton: false,
+                            textColor: Colors.white,
+                            title: 'Popular Categories',
+                          ),
                         ),
                         const SizedBox(
                           height: 16,
@@ -67,6 +70,10 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         CarouselSliders(images: images),
+                        const SizedBox(
+                          height: 32,
+                        ),
+                        SectionHeading(title: 'Popular Products'),
                         const SizedBox(
                           height: 16,
                         ),
