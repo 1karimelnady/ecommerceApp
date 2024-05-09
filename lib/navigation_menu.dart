@@ -43,7 +43,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
 }
 
 List screens = [
-  const HomeScreen(),
+  HomeScreen(),
   Container(
     color: Colors.red,
   ),

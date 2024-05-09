@@ -45,4 +45,10 @@ class MainCubit extends Cubit<MainStates> {
     pageController.jumpToPage(2);
     emit(SkipState());
   }
+
+  int currentCarouselIndex = 0;
+  updateCarousel(index) {
+    currentCarouselIndex = index;
+    emit(CarouselSliderState());
+  }
 }

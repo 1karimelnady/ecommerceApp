@@ -9,3 +9,5 @@ class UpdateDotNavigationState extends MainStates {}
 class SkipState extends MainStates {}
 
 class NextPageState extends MainStates {}
+
+class CarouselSliderState extends MainStates {}

@@ -10,9 +10,11 @@ class CiricularContainer extends StatelessWidget {
     this.top,
     this.right,
     this.left,
+    required this.margin,
   });
 
   final double width, height, radius;
+  final EdgeInsets margin;
   final double? left;
   final double? right;
   final double? top;
@@ -20,17 +22,13 @@ class CiricularContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: top,
-      right: right,
-      left: left,
-      child: Container(
-        width: width,
-        height: height,
-        decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(radius),
-        ),
+    return Container(
+      width: width,
+      margin: margin,
+      height: height,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(radius),
       ),
     );
   }
