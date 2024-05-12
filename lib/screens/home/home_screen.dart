@@ -12,6 +12,7 @@ import '../../cubit/application_state/main_states.dart';
 import '../../cubit/main_cubit.dart';
 import '../categories/categories.dart';
 
+@immutable
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
   List images = [
@@ -45,9 +46,9 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 24.0),
-                          child: const SectionHeading(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 24.0),
+                          child: SectionHeading(
                             showActionButton: false,
                             textColor: Colors.white,
                             title: 'Popular Categories',
@@ -73,7 +74,8 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        SectionHeading(title: 'Popular Products'),
+                        SectionHeading(
+                            title: 'Popular Products', textPressed: () {}),
                         const SizedBox(
                           height: 16,
                         ),

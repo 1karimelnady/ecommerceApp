@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 import '../app_manager/local_data.dart';
 import '../utilites/device/device_utility.dart';
 
 class SearchContainer extends StatelessWidget {
-  const SearchContainer({
-    super.key,
-    required this.text,
-    required this.icon,
-    this.showBackground = true,
-    this.showBorder = true,
-  });
+  const SearchContainer(
+      {super.key,
+      required this.text,
+      this.icon = Iconsax.search_normal,
+      this.showBackground = true,
+      this.showBorder = true,
+      this.padding = const EdgeInsets.symmetric(horizontal: 24)});
 
   final String text;
-  final IconData icon;
+  final IconData? icon;
+  final EdgeInsets padding;
   final bool showBackground, showBorder;
 
   @override
   Widget build(BuildContext context) {
     final dark = DeviceUtils.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
+      padding: padding,
       child: Container(
         width: DeviceUtils.getScreenWidth(context),
         padding: const EdgeInsets.all(8),

@@ -5,6 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../app_manager/local_data.dart';
 import '../../../common_widget/rounded_container.dart';
 import '../../../utilites/device/device_utility.dart';
+import 'brand_title_verified_icon.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({
@@ -98,53 +99,42 @@ class ProductCardVertical extends StatelessWidget {
                 const SizedBox(
                   height: 8,
                 ),
-                Row(
-                  children: [
-                    Text(
-                      'Nike',
-                      style: Theme.of(context).textTheme.labelMedium,
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    const Icon(
-                      Iconsax.verify5,
-                      color: primaryColor,
-                    )
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      '\$35.5',
-                      style: Theme.of(context).textTheme.titleLarge,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    Container(
-                        decoration: const BoxDecoration(
-                            color: darkColor,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(12),
-                              bottomRight: Radius.circular(16),
-                            )),
-                        child: SizedBox(
-                          width: 32 * 1.2,
-                          height: 32 * 1.2,
-                          child: Center(
-                              child: IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Iconsax.add,
-                              color: Colors.white,
-                            ),
-                          )),
-                        )),
-                  ],
+                const BrandTitleVerifiedIcon(
+                  title: 'Nike',
                 ),
               ],
             ),
+          ),
+          const Spacer(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                '\$35.5',
+                style: Theme.of(context).textTheme.titleLarge,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              Container(
+                  decoration: const BoxDecoration(
+                      color: darkColor,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(12),
+                        bottomRight: Radius.circular(16),
+                      )),
+                  child: SizedBox(
+                    width: 32 * 1.2,
+                    height: 32 * 1.2,
+                    child: Center(
+                        child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Iconsax.add,
+                        color: Colors.white,
+                      ),
+                    )),
+                  )),
+            ],
           ),
         ],
       ),

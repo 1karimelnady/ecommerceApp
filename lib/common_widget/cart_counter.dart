@@ -5,10 +5,10 @@ class CartCounter extends StatelessWidget {
   const CartCounter({
     super.key,
     required this.iconPressed,
-    required this.iconColor,
+    this.iconColor,
   });
   final VoidCallback iconPressed;
-  final Color iconColor;
+  final Color? iconColor;
   @override
   Widget build(BuildContext context) {
     return Stack(

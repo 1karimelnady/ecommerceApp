@@ -7,16 +7,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar(
       {super.key,
       required this.title,
-      required this.showBackArrow,
-      required this.leadingIcon,
-      required this.leadingPressed,
+      this.showBackArrow = false,
+      this.leadingIcon,
+      this.leadingPressed,
       required this.actions});
 
   final Widget title;
   final bool showBackArrow;
   final List<Widget> actions;
-  final IconData leadingIcon;
-  final VoidCallback leadingPressed;
+  final IconData? leadingIcon;
+  final VoidCallback? leadingPressed;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,11 +30,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     RoutesManager.pop(context);
                   },
                   icon: Icon(Iconsax.arrow_left))
-              : null,
-          // leadingIcon != null
-          //         ? IconButton(
-          //             onPressed: leadingPressed, icon: Icon(leadingIcon))
-          //         : null,
+              : leadingIcon != null
+                  ? IconButton(
+                      onPressed: leadingPressed, icon: Icon(leadingIcon))
+                  : null,
           title: title,
         ));
   }
