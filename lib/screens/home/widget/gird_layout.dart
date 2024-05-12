@@ -15,7 +15,7 @@ class GirdLayout extends StatelessWidget {
         itemCount: itemCount,
         shrinkWrap: true,
         padding: EdgeInsets.zero,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             mainAxisExtent: mainAxisExtent,
             crossAxisCount: 2,
