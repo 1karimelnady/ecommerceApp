@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/screens/home/widget/carouselsliders.dart';
+import 'package:ecommerce_app/screens/home/widget/gird_layout.dart';
 import 'package:ecommerce_app/screens/home/widget/home_appbar.dart';
 import 'package:ecommerce_app/screens/home/widget/primary_header_container.dart';
 import 'package:ecommerce_app/screens/home/widget/product_card_vertical.dart';
@@ -79,19 +80,12 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 16,
                         ),
-                        GridView.builder(
-                            shrinkWrap: true,
-                            itemCount: 4,
-                            padding: EdgeInsets.zero,
-                            physics: const NeverScrollableScrollPhysics(),
-                            gridDelegate:
-                                const SliverGridDelegateWithFixedCrossAxisCount(
-                                    mainAxisExtent: 288,
-                                    mainAxisSpacing: 16,
-                                    crossAxisCount: 2,
-                                    crossAxisSpacing: 16),
-                            itemBuilder: (context, index) =>
-                                const ProductCardVertical()),
+                        GirdLayout(
+                          itemCount: 4,
+                          itemBuilder: (copntext, index) {
+                            return const ProductCardVertical();
+                          },
+                        )
                       ],
                     ),
                   ),
