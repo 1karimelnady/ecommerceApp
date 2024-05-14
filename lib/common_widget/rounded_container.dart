@@ -9,7 +9,7 @@ class RoundedContainer extends StatelessWidget {
     this.height,
     this.radius = 16,
     this.showBorder = false,
-    required this.padding,
+    this.padding,
     this.borderColor = borderPrimary,
     this.backgroundColor = Colors.white,
     this.margin,

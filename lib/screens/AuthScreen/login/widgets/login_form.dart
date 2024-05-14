@@ -1,6 +1,8 @@
+import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/navigation_menu.dart';
 import 'package:ecommerce_app/screens/AuthScreen/Register/register_screen.dart';
+import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -19,8 +21,10 @@ class LoginForm extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'E-mail',
+                labelStyle: TextStyle(
+                    color: DeviceUtils.isDarkMode(context) ? white : black),
                 prefixIcon: Icon(Iconsax.direct_right),
               ),
             ),
@@ -28,8 +32,10 @@ class LoginForm extends StatelessWidget {
               height: 16,
             ),
             TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Password',
+                labelStyle: TextStyle(
+                    color: DeviceUtils.isDarkMode(context) ? white : black),
                 suffixIcon: Icon(Iconsax.eye_slash),
                 prefixIcon: Icon(Iconsax.password_check),
               ),

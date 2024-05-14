@@ -15,10 +15,10 @@ class LoginHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image(
-          height: 150,
-          image: AssetImage(dark ? lightLogo : darkLogo),
-        ),
+        // Image(
+        //   height: 150,
+        //   image: AssetImage(dark ? lightLogo : darkLogo),
+        // ),
         Text(
           "Welcome Back",
           style: Theme.of(context).textTheme.headlineMedium,

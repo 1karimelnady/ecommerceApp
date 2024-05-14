@@ -4,6 +4,7 @@ import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../app_manager/local_data.dart';
 import '../verfiy_email.dart';
 
 class RegisterForm extends StatelessWidget {
@@ -22,8 +23,10 @@ class RegisterForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   expands: false,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: 'First Name',
+                    labelStyle: TextStyle(
+                        color: DeviceUtils.isDarkMode(context) ? white : black),
                     prefixIcon: Icon(Iconsax.user),
                   ),
                 ),
@@ -34,8 +37,10 @@ class RegisterForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   expands: false,
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     labelText: 'Last Name',
+                    labelStyle: TextStyle(
+                        color: DeviceUtils.isDarkMode(context) ? white : black),
                     prefixIcon: Icon(Iconsax.user),
                   ),
                 ),
@@ -47,9 +52,11 @@ class RegisterForm extends StatelessWidget {
           ),
           TextFormField(
             expands: false,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: 'username',
               prefixIcon: Icon(Iconsax.user1),
+              labelStyle: TextStyle(
+                  color: DeviceUtils.isDarkMode(context) ? white : black),
             ),
           ),
           const SizedBox(
@@ -57,9 +64,11 @@ class RegisterForm extends StatelessWidget {
           ),
           TextFormField(
             expands: false,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: 'E-mail',
-              prefixIcon: Icon(Iconsax.direct),
+              labelStyle: TextStyle(
+                  color: DeviceUtils.isDarkMode(context) ? white : black),
+              prefixIcon: const Icon(Iconsax.direct),
             ),
           ),
           const SizedBox(
@@ -67,9 +76,11 @@ class RegisterForm extends StatelessWidget {
           ),
           TextFormField(
             expands: false,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: 'Phone Number',
               prefixIcon: Icon(Iconsax.call),
+              labelStyle: TextStyle(
+                  color: DeviceUtils.isDarkMode(context) ? white : black),
             ),
           ),
           const SizedBox(
@@ -77,8 +88,10 @@ class RegisterForm extends StatelessWidget {
           ),
           TextFormField(
             expands: false,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: 'Password',
+              labelStyle: TextStyle(
+                  color: DeviceUtils.isDarkMode(context) ? white : black),
               suffixIcon: Icon(Iconsax.eye_slash),
               prefixIcon: Icon(Iconsax.password_check),
             ),

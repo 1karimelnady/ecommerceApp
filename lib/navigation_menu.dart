@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/screens/home/home_screen.dart';
 import 'package:ecommerce_app/screens/profile/profile_screen.dart';
+import 'package:ecommerce_app/screens/shop/store_screen.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -44,9 +45,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
 
 List screens = [
   HomeScreen(),
-  Container(
-    color: Colors.red,
-  ),
+  const StoreScreen(),
   Container(
     color: Colors.deepOrange,
   ),

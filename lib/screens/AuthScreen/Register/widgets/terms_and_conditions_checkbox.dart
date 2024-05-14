@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../../../../app_manager/local_data.dart';
 import '../../../../utilites/device/device_utility.dart';
@@ -18,7 +20,7 @@ class TermsAndConditionsCheckbox extends StatelessWidget {
             height: 24,
             child: Checkbox(value: true, onChanged: (value) {})),
         const SizedBox(
-          width: 14,
+          width: 7,
         ),
         Text.rich(TextSpan(children: [
           TextSpan(
@@ -30,12 +32,12 @@ class TermsAndConditionsCheckbox extends StatelessWidget {
                   .textTheme
                   .bodyMedium!
                   .apply(color: dark ? Colors.white : primaryColor)),
-          TextSpan(text: 'and', style: Theme.of(context).textTheme.bodySmall),
+          // TextSpan(text: 'and', style: Theme.of(context).textTheme.bodySmall),
           TextSpan(
               text: 'Terms of use ',
               style: Theme.of(context)
                   .textTheme
-                  .bodyMedium!
+                  .labelSmall!
                   .apply(color: dark ? Colors.white : primaryColor)),
         ])),
       ],
