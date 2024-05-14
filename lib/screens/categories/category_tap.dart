@@ -41,7 +41,7 @@ class CategoryTab extends StatelessWidget {
         GirdLayout(
           itemCount: 4,
           itemBuilder: (context, index) {
-            return const ProductCardVertical();
+            return ProductCardVertical();
           },
         )
       ],

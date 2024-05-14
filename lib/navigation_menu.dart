@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/favourite/favourite_screen.dart';
 import 'package:ecommerce_app/screens/home/home_screen.dart';
 import 'package:ecommerce_app/screens/profile/profile_screen.dart';
 import 'package:ecommerce_app/screens/shop/store_screen.dart';
@@ -34,7 +35,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
         destinations: const [
           NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
           NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
-          NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
+          NavigationDestination(icon: Icon(Iconsax.heart), label: 'Favourites'),
           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
         ],
       ),
@@ -46,8 +47,6 @@ class _NavigationMenuState extends State<NavigationMenu> {
 List screens = [
   HomeScreen(),
   const StoreScreen(),
-  Container(
-    color: Colors.deepOrange,
-  ),
+  const FavouriteScreen(),
   const ProfileScreen()
 ];

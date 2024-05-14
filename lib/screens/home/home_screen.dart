@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                         GirdLayout(
                           itemCount: 4,
                           itemBuilder: (copntext, index) {
-                            return const ProductCardVertical();
+                            return ProductCardVertical();
                           },
                         )
                       ],

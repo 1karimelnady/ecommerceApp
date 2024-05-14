@@ -6,7 +6,7 @@ import 'package:ecommerce_app/common_widget/search_container.dart';
 import 'package:ecommerce_app/screens/home/widget/brand_title_verified_icon.dart';
 import 'package:ecommerce_app/screens/home/widget/gird_layout.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
-import 'package:ecommerce_app/screens/shop/category_tap.dart';
+import 'package:ecommerce_app/screens/categories/category_tap.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
