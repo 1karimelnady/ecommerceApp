@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/screens/favourite/favourite_screen.dart';
 import 'package:ecommerce_app/screens/home/home_screen.dart';
-import 'package:ecommerce_app/screens/profile/profile_screen.dart';
+import 'package:ecommerce_app/screens/Settings/settings_screen.dart';
 import 'package:ecommerce_app/screens/shop/store_screen.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
@@ -48,5 +48,5 @@ List screens = [
   HomeScreen(),
   const StoreScreen(),
   const FavouriteScreen(),
-  const ProfileScreen()
+  const SettingScreen()
 ];

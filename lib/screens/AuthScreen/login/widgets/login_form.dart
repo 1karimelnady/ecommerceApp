@@ -25,7 +25,7 @@ class LoginForm extends StatelessWidget {
                 labelText: 'E-mail',
                 labelStyle: TextStyle(
                     color: DeviceUtils.isDarkMode(context) ? white : black),
-                prefixIcon: Icon(Iconsax.direct_right),
+                prefixIcon: const Icon(Iconsax.direct_right),
               ),
             ),
             const SizedBox(
@@ -36,8 +36,8 @@ class LoginForm extends StatelessWidget {
                 labelText: 'Password',
                 labelStyle: TextStyle(
                     color: DeviceUtils.isDarkMode(context) ? white : black),
-                suffixIcon: Icon(Iconsax.eye_slash),
-                prefixIcon: Icon(Iconsax.password_check),
+                suffixIcon: const Icon(Iconsax.eye_slash),
+                prefixIcon: const Icon(Iconsax.password_check),
               ),
             ),
             const SizedBox(

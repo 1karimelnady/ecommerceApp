@@ -10,11 +10,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       this.showBackArrow = false,
       this.leadingIcon,
       this.leadingPressed,
-      required this.actions});
+      this.actions});
 
   final Widget title;
   final bool showBackArrow;
-  final List<Widget> actions;
+  final List<Widget>? actions;
   final IconData? leadingIcon;
   final VoidCallback? leadingPressed;
   @override
@@ -29,7 +29,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   onPressed: () {
                     RoutesManager.pop(context);
                   },
-                  icon: Icon(Iconsax.arrow_left))
+                  icon: const Icon(Iconsax.arrow_left))
               : leadingIcon != null
                   ? IconButton(
                       onPressed: leadingPressed, icon: Icon(leadingIcon))

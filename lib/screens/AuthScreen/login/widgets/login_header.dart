@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../app_manager/local_data.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({

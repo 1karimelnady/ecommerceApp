@@ -1,21 +1,14 @@
 import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/common_widget/custom_appbar.dart';
-import 'package:ecommerce_app/common_widget/enums.dart';
-import 'package:ecommerce_app/common_widget/rounded_container.dart';
 import 'package:ecommerce_app/common_widget/search_container.dart';
-import 'package:ecommerce_app/screens/home/widget/brand_title_verified_icon.dart';
 import 'package:ecommerce_app/screens/home/widget/gird_layout.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
 import 'package:ecommerce_app/screens/categories/category_tap.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../brand/brand_card.dart';
 import '../../common_widget/cart_counter.dart';
-import '../brand/brand_show_case.dart';
-import '../home/widget/circular_image.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -131,7 +124,7 @@ class StoreScreen extends StatelessWidget {
                   indicatorColor: primaryColor,
                   labelColor:
                       DeviceUtils.isDarkMode(context) ? white : primaryColor,
-                  tabs: [
+                  tabs: const [
                     Tab(
                       child: Text('Sports'),
                     ),
@@ -152,7 +145,7 @@ class StoreScreen extends StatelessWidget {
               )
             ];
           },
-          body: TabBarView(
+          body: const TabBarView(
             children: [
               CategoryTab(),
               CategoryTab(),

@@ -19,7 +19,7 @@ class BrandCard extends StatelessWidget {
       child: RoundedContainer(
           backgroundColor: Colors.transparent,
           showBorder: showBorder,
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

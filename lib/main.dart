@@ -1,5 +1,4 @@
-import 'package:ecommerce_app/screens/on_boarding/on_boarding_screen.dart';
-import 'package:ecommerce_app/screens/shop/store_screen.dart';
+import 'package:ecommerce_app/screens/Settings/settings_screen.dart';
 import 'package:ecommerce_app/utilites/cache_helper.dart';
 import 'package:ecommerce_app/utilites/themes/themes.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       darkTheme: TThemesApp.darkTheme,
       theme: TThemesApp.lightTheme,
-      home: const OnboardingScreen(),
+      home: const SettingScreen(),
     );
   }
 }

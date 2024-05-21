@@ -27,7 +27,7 @@ class RegisterForm extends StatelessWidget {
                     labelText: 'First Name',
                     labelStyle: TextStyle(
                         color: DeviceUtils.isDarkMode(context) ? white : black),
-                    prefixIcon: Icon(Iconsax.user),
+                    prefixIcon: const Icon(Iconsax.user),
                   ),
                 ),
               ),
@@ -41,7 +41,7 @@ class RegisterForm extends StatelessWidget {
                     labelText: 'Last Name',
                     labelStyle: TextStyle(
                         color: DeviceUtils.isDarkMode(context) ? white : black),
-                    prefixIcon: Icon(Iconsax.user),
+                    prefixIcon: const Icon(Iconsax.user),
                   ),
                 ),
               ),
@@ -54,7 +54,7 @@ class RegisterForm extends StatelessWidget {
             expands: false,
             decoration: InputDecoration(
               labelText: 'username',
-              prefixIcon: Icon(Iconsax.user1),
+              prefixIcon: const Icon(Iconsax.user1),
               labelStyle: TextStyle(
                   color: DeviceUtils.isDarkMode(context) ? white : black),
             ),
@@ -78,7 +78,7 @@ class RegisterForm extends StatelessWidget {
             expands: false,
             decoration: InputDecoration(
               labelText: 'Phone Number',
-              prefixIcon: Icon(Iconsax.call),
+              prefixIcon: const Icon(Iconsax.call),
               labelStyle: TextStyle(
                   color: DeviceUtils.isDarkMode(context) ? white : black),
             ),
@@ -92,8 +92,8 @@ class RegisterForm extends StatelessWidget {
               labelText: 'Password',
               labelStyle: TextStyle(
                   color: DeviceUtils.isDarkMode(context) ? white : black),
-              suffixIcon: Icon(Iconsax.eye_slash),
-              prefixIcon: Icon(Iconsax.password_check),
+              suffixIcon: const Icon(Iconsax.eye_slash),
+              prefixIcon: const Icon(Iconsax.password_check),
             ),
           ),
           const SizedBox(
@@ -107,7 +107,7 @@ class RegisterForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                RoutesManager.navigatorAndRemove(context, VerifyEmailScreen());
+                RoutesManager.navigatorAndRemove(context, const VerifyEmailScreen());
               },
               child: const Text('Create Account'),
             ),

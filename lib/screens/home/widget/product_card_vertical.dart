@@ -8,7 +8,7 @@ import '../../../utilites/device/device_utility.dart';
 import 'brand_title_verified_icon.dart';
 
 class ProductCardVertical extends StatelessWidget {
-  ProductCardVertical({
+  const ProductCardVertical({
     super.key,
     this.onTap,
   });

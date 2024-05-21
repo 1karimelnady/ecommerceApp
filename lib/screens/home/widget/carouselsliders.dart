@@ -28,7 +28,7 @@ class CarouselSliders extends StatelessWidget {
                       imageUrl: url,
                     ))
                 .toList()),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
         Row(
@@ -38,7 +38,7 @@ class CarouselSliders extends StatelessWidget {
               CiricularContainer(
                 width: 18,
                 height: 4,
-                margin: EdgeInsets.only(right: 10),
+                margin: const EdgeInsets.only(right: 10),
                 backgroundColor:
                     MainCubit.get(context).currentCarouselIndex == i
                         ? primaryColor

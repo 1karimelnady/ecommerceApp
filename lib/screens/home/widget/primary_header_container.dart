@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../../../app_manager/local_data.dart';
 import 'ciricular_container.dart';
@@ -15,32 +17,32 @@ class PrimaryHeaderContainer extends StatelessWidget {
     return CurvedWidget(
       child: Container(
         color: primaryColor,
-        padding: const EdgeInsets.all(0),
-        child: SizedBox(
-          height: 400,
-          child: Stack(
-            children: [
-              CiricularContainer(
+        child: Stack(
+          children: [
+            Positioned(
+              top: -150,
+              right: -250,
+              child: CiricularContainer(
                 width: 400,
                 height: 400,
                 radius: 400,
-                margin: EdgeInsets.all(0),
+                margin: const EdgeInsets.all(0),
                 backgroundColor: textWhite.withOpacity(0.1),
-                top: -150,
-                right: -250,
               ),
-              CiricularContainer(
+            ),
+            Positioned(
+              top: 100,
+              right: -300,
+              child: CiricularContainer(
                 width: 400,
-                margin: EdgeInsets.all(0),
+                margin: const EdgeInsets.all(0),
                 height: 400,
                 radius: 400,
                 backgroundColor: textWhite.withOpacity(0.1),
-                top: 100,
-                right: -300,
               ),
-              child
-            ],
-          ),
+            ),
+            child
+          ],
         ),
       ),
     );

@@ -14,13 +14,13 @@ class FavouriteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        title: Text('Favourites'),
+        title: const Text('Favourites'),
         actions: [
           IconButton(
               onPressed: () {
                 RoutesManager.navigatorPush(context, HomeScreen());
               },
-              icon: Icon(Iconsax.add))
+              icon: const Icon(Iconsax.add))
         ],
       ),
       body: SingleChildScrollView(
@@ -30,7 +30,7 @@ class FavouriteScreen extends StatelessWidget {
             children: [
               GirdLayout(
                 itemCount: 8,
-                itemBuilder: (context, index) => ProductCardVertical(),
+                itemBuilder: (context, index) => const ProductCardVertical(),
               ),
             ],
           ),

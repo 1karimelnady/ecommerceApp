@@ -14,14 +14,14 @@ class BrandShowCase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RoundedContainer(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         backgroundColor: Colors.transparent,
         borderColor: darkGrey,
         showBorder: true,
-        margin: EdgeInsets.only(bottom: 16),
+        margin: const EdgeInsets.only(bottom: 16),
         child: Column(
           children: [
-            BrandCard(showBorder: false),
+            const BrandCard(showBorder: false),
             Row(
                 children: images
                     .map((image) => brandTopProductImage(image, context))
@@ -36,8 +36,8 @@ class BrandShowCase extends StatelessWidget {
         height: 100,
         backgroundColor:
             DeviceUtils.isDarkMode(context) ? darkGrey : lightColor,
-        margin: EdgeInsets.only(right: 8),
-        padding: EdgeInsets.all(5),
+        margin: const EdgeInsets.only(right: 8),
+        padding: const EdgeInsets.all(5),
         child: Image(
           image: AssetImage(image),
           fit: BoxFit.contain,

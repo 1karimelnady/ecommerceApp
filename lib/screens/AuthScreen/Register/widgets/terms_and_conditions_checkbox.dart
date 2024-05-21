@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../../../app_manager/local_data.dart';
 import '../../../../utilites/device/device_utility.dart';

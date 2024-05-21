@@ -43,7 +43,7 @@ class SearchContainer extends StatelessWidget {
                 color: darkerGrey,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 5,
             ),
             Text(

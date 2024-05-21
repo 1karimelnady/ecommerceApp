@@ -12,10 +12,10 @@ class CategoryTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       children: [
-        Padding(
-          padding: const EdgeInsets.all(24.0),
+        const Padding(
+          padding: EdgeInsets.all(24.0),
           child: Column(
             children: [
               BrandShowCase(
@@ -35,13 +35,13 @@ class CategoryTab extends StatelessWidget {
           title: 'You might like',
           textPressed: () {},
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
         GirdLayout(
           itemCount: 4,
           itemBuilder: (context, index) {
-            return ProductCardVertical();
+            return const ProductCardVertical();
           },
         )
       ],
