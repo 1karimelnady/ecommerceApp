@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  CircularImage(
+                  const CircularImage(
                     imageUrl: 'images/user-128.png',
                     width: 80,
                     height: 80,

@@ -107,7 +107,8 @@ class RegisterForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                RoutesManager.navigatorAndRemove(context, const VerifyEmailScreen());
+                RoutesManager.navigatorAndRemove(
+                    context, const VerifyEmailScreen());
               },
               child: const Text('Create Account'),
             ),

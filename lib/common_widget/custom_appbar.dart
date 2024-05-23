@@ -6,13 +6,13 @@ import 'package:iconsax/iconsax.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar(
       {super.key,
-      required this.title,
+      this.title,
       this.showBackArrow = false,
       this.leadingIcon,
       this.leadingPressed,
       this.actions});
 
-  final Widget title;
+  final Widget? title;
   final bool showBackArrow;
   final List<Widget>? actions;
   final IconData? leadingIcon;
@@ -30,10 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     RoutesManager.pop(context);
                   },
                   icon: const Icon(Iconsax.arrow_left))
-              : leadingIcon != null
-                  ? IconButton(
-                      onPressed: leadingPressed, icon: Icon(leadingIcon))
-                  : null,
+              : null,
           title: title,
         ));
   }

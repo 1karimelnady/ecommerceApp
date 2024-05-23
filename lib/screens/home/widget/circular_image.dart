@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../app_manager/local_data.dart';
 
+@immutable
 class CircularImage extends StatelessWidget {
-  CircularImage({
+  const CircularImage({
     super.key,
     this.borderRadius = 16,
     this.width = 56,
@@ -22,7 +23,7 @@ class CircularImage extends StatelessWidget {
   final double borderRadius, width, height;
   final EdgeInsets? padding;
   final BoxBorder? border;
-  bool applyImageRadius;
+  final bool applyImageRadius;
   final String imageUrl;
   final bool isNetworkImage;
   final BoxFit? fit;

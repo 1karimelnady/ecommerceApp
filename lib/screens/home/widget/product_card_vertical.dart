@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/screens/home/widget/rounded_image.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -5,6 +6,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../app_manager/local_data.dart';
 import '../../../common_widget/rounded_container.dart';
 import '../../../utilites/device/device_utility.dart';
+import '../../productDetails/product_details.dart';
 import 'brand_title_verified_icon.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -17,7 +19,7 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool dark = DeviceUtils.isDarkMode(context);
     return GestureDetector(
-      onTap: onTap,
+      onTap: () => RoutesManager.navigatorPush(context, const ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

@@ -16,7 +16,7 @@ import '../categories/categories.dart';
 @immutable
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
-  List images = [
+  final List images = [
     'images/images3.jpg',
     'images/images2.jpg',
     'images/shoes.jpg'
@@ -28,7 +28,6 @@ class HomeScreen extends StatelessWidget {
       child: BlocConsumer<MainCubit, MainStates>(
         listener: (context, state) {},
         builder: (BuildContext context, MainStates state) {
-          // var cubit = MainCubit.get(context);
           return Scaffold(
             body: SingleChildScrollView(
               child: Column(
@@ -63,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                           title: 'show shoes',
                           image: 'images/icons8-shoes-50.png',
                           onTap: () {},
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -82,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         GirdLayout(
                           itemCount: 4,
-                          itemBuilder: (copntext, index) {
+                          itemBuilder: (context, index) {
                             return const ProductCardVertical();
                           },
                         )

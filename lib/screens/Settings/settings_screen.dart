@@ -18,54 +18,55 @@ class SettingScreen extends StatelessWidget {
         child: Column(
           children: [
             PrimaryHeaderContainer(
+                height: 200,
                 child: Column(
-              children: [
-                CustomAppBar(
-                    title: Text(
-                      'Account',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headlineMedium!
-                          .apply(color: Colors.white),
+                  children: [
+                    CustomAppBar(
+                        title: Text(
+                          'Account',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium!
+                              .apply(color: Colors.white),
+                        ),
+                        actions: const []),
+                    ListTile(
+                      leading: const CircularImage(
+                        imageUrl: 'images/push-pin.png',
+                        width: 50,
+                        height: 50,
+                        padding: EdgeInsets.all(0),
+                      ),
+                      title: Text(
+                        'Coding with K',
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineSmall!
+                            .apply(color: Colors.white),
+                      ),
+                      subtitle: Text(
+                        'karimelnady728@gmail.com',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall!
+                            .apply(color: Colors.white),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {
+                          RoutesManager.navigatorPush(
+                              context, const ProfileScreen());
+                        },
+                        icon: const Icon(
+                          Iconsax.edit,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
-                    actions: const []),
-                ListTile(
-                  leading: CircularImage(
-                    imageUrl: 'images/push-pin.png',
-                    width: 50,
-                    height: 50,
-                    padding: const EdgeInsets.all(0),
-                  ),
-                  title: Text(
-                    'Coding with K',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineSmall!
-                        .apply(color: Colors.white),
-                  ),
-                  subtitle: Text(
-                    'karimelnady728@gmail.com',
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodySmall!
-                        .apply(color: Colors.white),
-                  ),
-                  trailing: IconButton(
-                    onPressed: () {
-                      RoutesManager.navigatorPush(
-                          context, const ProfileScreen());
-                    },
-                    icon: const Icon(
-                      Iconsax.edit,
-                      color: Colors.white,
+                    const SizedBox(
+                      height: 32,
                     ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 32,
-                ),
-              ],
-            )),
+                  ],
+                )),
             Padding(
               padding: const EdgeInsets.all(24.0),
               child: Column(
