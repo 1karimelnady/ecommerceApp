@@ -21,10 +21,10 @@ class ProductImageSlider extends StatelessWidget {
         color: dark ? darkerGrey : lightColor,
         child: Stack(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 300,
               child: Padding(
-                padding: const EdgeInsets.all(32.0),
+                padding: EdgeInsets.all(32.0),
                 child: Center(
                   child: Image(
                     image:
@@ -41,16 +41,16 @@ class ProductImageSlider extends StatelessWidget {
                 height: 80,
                 child: ListView.separated(
                     scrollDirection: Axis.horizontal,
-                    physics: AlwaysScrollableScrollPhysics(),
+                    physics: const AlwaysScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemBuilder: (context, index) => CircularImage(
                           imageUrl: "images/41S+9swCRBL._AC_SX522_.jpg",
                           backgroundColor: dark ? darkColor : white,
-                          padding: EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(8),
                           width: 80,
                           border: Border.all(color: primaryColor),
                         ),
-                    separatorBuilder: (context, index) => SizedBox(
+                    separatorBuilder: (context, index) => const SizedBox(
                           width: 16,
                         ),
                     itemCount: 8),

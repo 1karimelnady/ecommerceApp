@@ -13,12 +13,12 @@ class RatingAndShare extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(
+            const Icon(
               Iconsax.star5,
               color: Colors.amber,
               size: 24,
             ),
-            SizedBox(
+            const SizedBox(
               width: 8,
             ),
             Text.rich(
@@ -27,7 +27,7 @@ class RatingAndShare extends StatelessWidget {
                   TextSpan(
                       text: '5.0',
                       style: Theme.of(context).textTheme.bodyLarge),
-                  TextSpan(
+                  const TextSpan(
                     text: '(199)',
                   ),
                 ],
@@ -37,7 +37,7 @@ class RatingAndShare extends StatelessWidget {
         ),
         IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.share,
               size: 24,
             ))
