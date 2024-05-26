@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/screens/productDetails/widgets/product_attributes.dart';
 import 'package:ecommerce_app/screens/productDetails/widgets/product_image_slider.dart';
+import 'package:ecommerce_app/screens/productDetails/widgets/product_meta_data.dart';
 import 'package:ecommerce_app/screens/productDetails/widgets/rating_share.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +19,11 @@ class ProductDetail extends StatelessWidget {
               child: Column(
                 children: [
                   RatingAndShare(),
+                  ProductMetaData(),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  ProductAttributes()
                 ],
               ),
             ),

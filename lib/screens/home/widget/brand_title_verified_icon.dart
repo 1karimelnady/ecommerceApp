@@ -14,9 +14,11 @@ class BrandTitleVerifiedIcon extends StatelessWidget {
     this.brandTextSizes = TextSizes.small,
     this.iconColor = primaryColor,
     this.textColor,
+    this.icon = Iconsax.verify5,
   });
   final String title;
   final int maxLines;
+  final IconData icon;
   final TextAlign? textAlign;
   final TextSizes brandTextSizes;
   final Color? iconColor, textColor;
@@ -39,7 +41,7 @@ class BrandTitleVerifiedIcon extends StatelessWidget {
           width: 5,
         ),
         Icon(
-          Iconsax.verify5,
+          icon,
           color: iconColor,
         )
       ],
