@@ -22,9 +22,10 @@ class SectionHeading extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.headlineSmall!.apply(
-                color: textColor,
-              ),
+          style: Theme.of(context)
+              .textTheme
+              .headlineSmall!
+              .apply(color: textColor, fontWeightDelta: 2),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

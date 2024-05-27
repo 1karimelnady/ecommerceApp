@@ -5,20 +5,21 @@ class CiricularContainer extends StatelessWidget {
     super.key,
     required this.width,
     required this.height,
-    required this.radius,
-    required this.backgroundColor,
+    this.radius,
+    this.backgroundColor,
     this.top,
     this.right,
     this.left,
-    required this.margin,
+    this.margin,
   });
 
-  final double width, height, radius;
-  final EdgeInsets margin;
+  final double width, height;
+  final double? radius;
+  final EdgeInsets? margin;
   final double? left;
   final double? right;
   final double? top;
-  final Color backgroundColor;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,7 @@ class CiricularContainer extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(radius),
+        borderRadius: BorderRadius.circular(radius ?? 0),
       ),
     );
   }
