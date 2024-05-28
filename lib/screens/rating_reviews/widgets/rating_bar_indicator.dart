@@ -7,13 +7,14 @@ import '../../../app_manager/local_data.dart';
 class TRatingBarIndicator extends StatelessWidget {
   const TRatingBarIndicator({
     super.key,
+    required this.rating,
   });
-
+  final double rating;
   @override
   Widget build(BuildContext context) {
     return RatingBarIndicator(
         unratedColor: grey,
-        rating: 3.5,
+        rating: rating,
         itemSize: 20,
         itemBuilder: (context, index) => Icon(
               Iconsax.star1,

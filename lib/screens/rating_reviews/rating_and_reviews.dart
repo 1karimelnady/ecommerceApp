@@ -3,6 +3,7 @@ import 'package:ecommerce_app/common_widget/custom_appbar.dart';
 import 'package:ecommerce_app/screens/rating_reviews/widgets/overall_rating_product.dart';
 import 'package:ecommerce_app/screens/rating_reviews/widgets/rating_bar_indicator.dart';
 import 'package:ecommerce_app/screens/rating_reviews/widgets/rating_progress_indicator.dart';
+import 'package:ecommerce_app/screens/rating_reviews/widgets/use_card_review.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,9 @@ class ReviewsScreen extends StatelessWidget {
               height: 16,
             ),
             OverallProductRating(),
-            TRatingBarIndicator(),
+            TRatingBarIndicator(
+              rating: 3.5,
+            ),
             Text(
               '12,611',
               style: Theme.of(context).textTheme.bodySmall,
@@ -39,6 +42,7 @@ class ReviewsScreen extends StatelessWidget {
             SizedBox(
               height: 32,
             ),
+            UserCardReview()
           ]),
         ),
       ),
