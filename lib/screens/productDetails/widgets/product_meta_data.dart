@@ -22,7 +22,7 @@ class ProductMetaData extends StatelessWidget {
             RoundedContainer(
               radius: 5,
               backgroundColor: secondaryColor.withOpacity(0.8),
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
               child: Text(
                 '25%',
                 style: Theme.of(context)
@@ -31,7 +31,7 @@ class ProductMetaData extends StatelessWidget {
                     .apply(color: Colors.black),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 16,
             ),
             Text(
@@ -41,29 +41,29 @@ class ProductMetaData extends StatelessWidget {
                   .titleSmall!
                   .apply(decoration: TextDecoration.lineThrough),
             ),
-            SizedBox(
+            const SizedBox(
               width: 16,
             ),
-            PriceText(
+            const PriceText(
               price: '175',
               isLarge: true,
             )
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 16 / 1.5,
         ),
-        TitleText(
+        const TitleText(
           title: 'Green Nike Sports Shirt',
           textAlign: TextAlign.left,
         ),
-        SizedBox(
+        const SizedBox(
           height: 16 / 1.5,
         ),
         Row(
           children: [
-            TitleText(title: 'status'),
-            SizedBox(
+            const TitleText(title: 'status'),
+            const SizedBox(
               width: 16,
             ),
             Text(
@@ -72,7 +72,7 @@ class ProductMetaData extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 16 / 1.5,
         ),
         Row(
@@ -83,10 +83,10 @@ class ProductMetaData extends StatelessWidget {
               height: 32,
               overlayColor: isDark ? white : black,
             ),
-            SizedBox(
+            const SizedBox(
               width: 8,
             ),
-            BrandTitleVerifiedIcon(
+            const BrandTitleVerifiedIcon(
               title: 'Nike',
               brandTextSizes: TextSizes.medium,
             )

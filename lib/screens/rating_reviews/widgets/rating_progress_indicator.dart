@@ -30,7 +30,7 @@ class RatingProgressIndicator extends StatelessWidget {
               minHeight: 10,
               backgroundColor: grey,
               value: value,
-              valueColor: AlwaysStoppedAnimation(primaryColor),
+              valueColor: const AlwaysStoppedAnimation(primaryColor),
             ),
           ),
         ),

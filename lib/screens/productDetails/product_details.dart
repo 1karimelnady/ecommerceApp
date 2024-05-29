@@ -7,7 +7,6 @@ import 'package:ecommerce_app/screens/productDetails/widgets/product_image_slide
 import 'package:ecommerce_app/screens/productDetails/widgets/product_meta_data.dart';
 import 'package:ecommerce_app/screens/productDetails/widgets/rating_share.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 import '../rating_reviews/rating_and_reviews.dart';
@@ -18,39 +17,39 @@ class ProductDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomAddToCart(),
+      bottomNavigationBar: const BottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ProductImageSlider(),
+            const ProductImageSlider(),
             Padding(
-              padding: EdgeInsets.only(left: 24.0, right: 24.0, bottom: 24.0),
+              padding: const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 24.0),
               child: Column(
                 children: [
-                  RatingAndShare(),
-                  ProductMetaData(),
-                  SizedBox(
+                  const RatingAndShare(),
+                  const ProductMetaData(),
+                  const SizedBox(
                     height: 8,
                   ),
-                  ProductAttributes(),
-                  SizedBox(
+                  const ProductAttributes(),
+                  const SizedBox(
                     height: 32,
                   ),
                   SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: () {}, child: Text('Checkout'))),
-                  SizedBox(
+                          onPressed: () {}, child: const Text('Checkout'))),
+                  const SizedBox(
                     height: 16,
                   ),
-                  SectionHeading(
+                  const SectionHeading(
                     title: 'Description',
                     showActionButton: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  ReadMoreText(
+                  const ReadMoreText(
                     'This is the Product Description for Blue Nike Sleeve less vest. '
                     'There are more things that can be added but i am just practicing and nothing else ,thanks',
                     trimMode: TrimMode.Line,
@@ -66,8 +65,8 @@ class ProductDetail extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                         color: primaryColor),
                   ),
-                  Divider(),
-                  SizedBox(
+                  const Divider(),
+                  const SizedBox(
                     height: 32,
                   ),
                   Row(
@@ -81,9 +80,9 @@ class ProductDetail extends StatelessWidget {
                       IconButton(
                           onPressed: () {
                             RoutesManager.navigatorPush(
-                                context, ReviewsScreen());
+                                context, const ReviewsScreen());
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.arrow_forward_ios_outlined,
                             size: 18,
                             // color: Colors.red,

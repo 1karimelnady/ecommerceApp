@@ -8,6 +8,8 @@ import 'package:ecommerce_app/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../addresses/address_screen.dart';
+
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
 
@@ -78,10 +80,13 @@ class SettingScreen extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  const MenuListTile(
+                  MenuListTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
+                    onTap: () {
+                      RoutesManager.navigatorPush(context, const AddressScreen());
+                    },
                   ),
                   const MenuListTile(
                     icon: Iconsax.shopping_cart,

@@ -13,10 +13,8 @@ class TChoiceChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChoiceChip(
-      padding: HelperFunction.getColor(text) != null ? EdgeInsets.all(0) : null,
-      backgroundColor: HelperFunction.getColor(text) != null
-          ? HelperFunction.getColor(text)
-          : null,
+      padding: HelperFunction.getColor(text) != null ? const EdgeInsets.all(0) : null,
+      backgroundColor: HelperFunction.getColor(text),
       onSelected: onSelected,
       avatar: HelperFunction.getColor(text) != null
           ? CiricularContainer(
@@ -25,14 +23,14 @@ class TChoiceChip extends StatelessWidget {
               height: 50,
               backgroundColor: HelperFunction.getColor(text))
           : null,
-      label: HelperFunction.getColor(text) != null ? SizedBox() : Text(text),
-      shape: HelperFunction.getColor(text) != null ? CircleBorder() : null,
+      label: HelperFunction.getColor(text) != null ? const SizedBox() : Text(text),
+      shape: HelperFunction.getColor(text) != null ? const CircleBorder() : null,
       labelStyle: TextStyle(
         color: select ? white : null,
       ),
       selected: select,
       labelPadding:
-          HelperFunction.getColor(text) != null ? EdgeInsets.all(0) : null,
+          HelperFunction.getColor(text) != null ? const EdgeInsets.all(0) : null,
     );
   }
 }

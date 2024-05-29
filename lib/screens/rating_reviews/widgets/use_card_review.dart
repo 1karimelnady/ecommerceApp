@@ -3,7 +3,6 @@ import 'package:ecommerce_app/common_widget/rounded_container.dart';
 import 'package:ecommerce_app/screens/rating_reviews/widgets/rating_bar_indicator.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 class UserCardReview extends StatelessWidget {
@@ -19,10 +18,10 @@ class UserCardReview extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage("images/user-128.png"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Text(
@@ -31,16 +30,16 @@ class UserCardReview extends StatelessWidget {
                 ),
               ],
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+            IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
         Row(
           children: [
-            TRatingBarIndicator(rating: 4),
-            SizedBox(
+            const TRatingBarIndicator(rating: 4),
+            const SizedBox(
               width: 16,
             ),
             Text(
@@ -49,10 +48,10 @@ class UserCardReview extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        ReadMoreText(
+        const ReadMoreText(
           'The user interface of the app is quite intuitive i was able to navigate and make purchases seamlessy. Great job! ',
           trimMode: TrimMode.Line,
           trimLines: 1,
@@ -63,7 +62,7 @@ class UserCardReview extends StatelessWidget {
           lessStyle: TextStyle(
               fontSize: 14, fontWeight: FontWeight.w800, color: primaryColor),
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
         RoundedContainer(
@@ -83,10 +82,10 @@ class UserCardReview extends StatelessWidget {
                           style: Theme.of(context).textTheme.bodyMedium),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  ReadMoreText(
+                  const ReadMoreText(
                     'The user interface of the app is quite intuitive i was able to navigate and make purchases seamlessy. Great job! ',
                     trimMode: TrimMode.Line,
                     trimLines: 1,

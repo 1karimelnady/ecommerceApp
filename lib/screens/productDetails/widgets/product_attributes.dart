@@ -17,29 +17,29 @@ class ProductAttributes extends StatelessWidget {
     return Column(
       children: [
         RoundedContainer(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           backgroundColor: isDark ? darkerGrey : grey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  SectionHeading(
+                  const SectionHeading(
                     title: 'Variation',
                     showActionButton: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Column(
                     children: [
                       Row(
                         children: [
-                          TitleText(
+                          const TitleText(
                             title: 'price : ',
                             smallSize: true,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Text(
@@ -49,19 +49,19 @@ class ProductAttributes extends StatelessWidget {
                                 .titleSmall!
                                 .apply(decoration: TextDecoration.lineThrough),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          PriceText(price: "20", isLarge: false),
+                          const PriceText(price: "20", isLarge: false),
                         ],
                       ),
                       Row(
                         children: [
-                          TitleText(
+                          const TitleText(
                             title: 'stock : ',
                             smallSize: true,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           Text(
@@ -74,7 +74,7 @@ class ProductAttributes extends StatelessWidget {
                   ),
                 ],
               ),
-              TitleText(
+              const TitleText(
                 title: 'This is the description of this product',
                 smallSize: true,
                 maxLines: 4,
@@ -82,17 +82,17 @@ class ProductAttributes extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 8,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(
+            const SectionHeading(
               title: 'Colors',
               showActionButton: false,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Wrap(
@@ -117,17 +117,17 @@ class ProductAttributes extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 8,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(
+            const SectionHeading(
               title: 'Sizes',
               showActionButton: false,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Wrap(
