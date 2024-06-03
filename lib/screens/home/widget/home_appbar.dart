@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
+import 'package:ecommerce_app/screens/cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -31,7 +33,9 @@ class HomeAppBar extends StatelessWidget {
       leadingPressed: () {},
       actions: [
         CartCounter(
-          iconPressed: () {},
+          iconPressed: () {
+            RoutesManager.navigatorPush(context, const CartScreen());
+          },
           iconColor: Colors.white,
         ),
       ],
