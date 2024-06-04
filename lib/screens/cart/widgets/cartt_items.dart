@@ -5,33 +5,36 @@ import '../../productDetails/widgets/price_text.dart';
 import 'cart_item.dart';
 
 class CartItems extends StatelessWidget {
-  const CartItems({super.key});
+  const CartItems({super.key, this.showAddRemoveButtons = true});
+  final bool showAddRemoveButtons;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
         shrinkWrap: true,
         itemBuilder: (context, index) {
-          return const Column(
+          return Column(
             children: [
-              CartItem(),
-              SizedBox(
-                height: 16,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 70,
-                      ),
-                      ProductQuantity(),
-                    ],
-                  ),
-                  PriceText(price: '256', isLarge: false)
-                ],
-              ),
+              const CartItem(),
+              if (showAddRemoveButtons)
+                const SizedBox(
+                  height: 16,
+                ),
+              if (showAddRemoveButtons)
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: 70,
+                        ),
+                        ProductQuantity(),
+                      ],
+                    ),
+                    PriceText(price: '256', isLarge: false)
+                  ],
+                ),
             ],
           );
         },
@@ -40,6 +43,6 @@ class CartItems extends StatelessWidget {
             height: 32,
           );
         },
-        itemCount: 10);
+        itemCount: 2);
   }
 }

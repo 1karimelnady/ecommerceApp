@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
           ),
           child: Column(
             children: [
-              LoginHeader(dark: dark),
+              LoginHeader(),
               const LoginForm(),
               const FormDivider(
                 dividerText: 'sign in with',

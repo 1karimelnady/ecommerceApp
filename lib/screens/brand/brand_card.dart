@@ -28,7 +28,7 @@ class BrandCard extends StatelessWidget {
                   isNetworkImage: false,
                   backgroundColor: Colors.transparent,
                   overlayColor: isDark ? white : black,
-                  imageUrl: 'images/push-pin.png',
+                  imageUrl: 'assets/images/push-pin.png',
                 ),
               ),
               const SizedBox(

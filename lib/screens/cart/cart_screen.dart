@@ -1,6 +1,9 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/common_widget/custom_appbar.dart';
 import 'package:ecommerce_app/screens/cart/widgets/cartt_items.dart';
 import 'package:flutter/material.dart';
+
+import '../checkout/checkout_screen.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -22,7 +25,9 @@ class CartScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(24.0),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            RoutesManager.navigatorPush(context, const CheckOutScreen());
+          },
           child: const Text('Checkout \$256.0'),
         ),
       ),

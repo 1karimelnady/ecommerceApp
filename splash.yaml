@@ -1,14 +1,14 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image : "assets/images/light_logo.png"
-  image_dark : "assets/images/dark_logo.png"
+  image : "assets/images/image_processing20210714-31704-b7bm4j.gif"
+  image_dark : "assets/images/image_processing20210714-31704-b7bm4j.gif"
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: "assets/images/light_logo.png"
-    image_dark: "assets/images/dark_logo.png"
+    image: "assets/images/image_processing20210714-31704-b7bm4j.gif"
+    image_dark: "assets/images/image_processing20210714-31704-b7bm4j.gif"
 
   web : false
 

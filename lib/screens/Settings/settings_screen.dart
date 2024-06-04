@@ -4,6 +4,7 @@ import 'package:ecommerce_app/screens/Settings/widget/menu_list_tile.dart';
 import 'package:ecommerce_app/screens/home/widget/circular_image.dart';
 import 'package:ecommerce_app/screens/home/widget/primary_header_container.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
+import 'package:ecommerce_app/screens/orders/order_screen.dart';
 import 'package:ecommerce_app/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -34,9 +35,9 @@ class SettingScreen extends StatelessWidget {
                         actions: const []),
                     ListTile(
                       leading: const CircularImage(
-                        imageUrl: 'images/push-pin.png',
-                        width: 50,
-                        height: 50,
+                        imageUrl: 'assets/images/push-pin.png',
+                        width: 45,
+                        height: 45,
                         padding: EdgeInsets.all(0),
                       ),
                       title: Text(
@@ -50,8 +51,8 @@ class SettingScreen extends StatelessWidget {
                         'karimelnady728@gmail.com',
                         style: Theme.of(context)
                             .textTheme
-                            .bodySmall!
-                            .apply(color: Colors.white),
+                            .labelSmall!
+                            .apply(color: Colors.white, fontWeightDelta: 8),
                       ),
                       trailing: IconButton(
                         onPressed: () {
@@ -85,7 +86,8 @@ class SettingScreen extends StatelessWidget {
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
                     onTap: () {
-                      RoutesManager.navigatorPush(context, const AddressScreen());
+                      RoutesManager.navigatorPush(
+                          context, const AddressScreen());
                     },
                   ),
                   const MenuListTile(
@@ -93,10 +95,13 @@ class SettingScreen extends StatelessWidget {
                     title: 'My Cart',
                     subTitle: 'Add,remove products and move to checkout',
                   ),
-                  const MenuListTile(
+                  MenuListTile(
                     icon: Iconsax.bag_tick,
                     title: 'My orders',
                     subTitle: 'In-progress and completed orders',
+                    onTap: () {
+                      RoutesManager.navigatorPush(context, OrdersScreen());
+                    },
                   ),
                   const MenuListTile(
                     icon: Iconsax.bank,

@@ -45,7 +45,8 @@ class ProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   RoundedImage(
-                      applyImageRadius: true, imageUrl: 'images/images3.jpg'),
+                      applyImageRadius: true,
+                      imageUrl: 'assets/images/images3.jpg'),
                   Positioned(
                     top: 12,
                     left: 5,

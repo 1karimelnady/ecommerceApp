@@ -1,22 +1,29 @@
+import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({
     super.key,
-    required this.dark,
   });
-
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final bool dark = DeviceUtils.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Image(
-        //   height: 150,
-        //   image: AssetImage(dark ? lightLogo : darkLogo),
-        // ),
+        Lottie.asset(
+          'assets/animations/Animation - 1717491598441.json',
+          width: DeviceUtils.getScreenWidth(context) * 0.8,
+          height: DeviceUtils.getScreenHeight(context) * 0.2,
+          repeat: true,
+          reverse: true,
+          fit: BoxFit.contain,
+        ),
+        SizedBox(
+          height: 16,
+        ),
         Text(
           "Welcome Back",
           style: Theme.of(context).textTheme.headlineMedium,

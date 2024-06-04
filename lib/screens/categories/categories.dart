@@ -37,7 +37,7 @@ class Categories extends StatelessWidget {
                 children: [
                   Container(
                     width: 56,
-                    height: 56,
+                    height: 55,
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: backgroundColor ??

@@ -20,9 +20,9 @@ class CategoryTab extends StatelessWidget {
             children: [
               BrandShowCase(
                 images: [
-                  'images/push-pin.png',
-                  'images/push-pin.png',
-                  'images/push-pin.png',
+                  'assets/images/push-pin.png',
+                  'assets/images/push-pin.png',
+                  'assets/images/push-pin.png',
                 ],
               )
             ],

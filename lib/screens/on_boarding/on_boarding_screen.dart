@@ -29,19 +29,19 @@ class OnboardingScreen extends StatelessWidget {
                   children: const [
                     OnBoardingPage(
                       title: 'Choose your product',
-                      image: 'assets/images/Animation - 1713687522311.gif',
+                      image: 'assets/animations/Animation - 1713687431859.json',
                       subTitle:
                           'welcome to a world of limitless choices -  your perfect product',
                     ),
                     OnBoardingPage(
                       title: 'Select payment Method',
-                      image: 'assets/images/Animation - 1713687798779.gif',
+                      image: 'assets/animations/Animation - 1717488465885.json',
                       subTitle:
                           'For seamless transactions, choose your payment path ',
                     ),
                     OnBoardingPage(
                       title: 'Deliver at your door step',
-                      image: 'assets/images/Animation - 1713688578890.gif',
+                      image: 'assets/animations/Animation - 1713688578890.json',
                       subTitle: 'From our Doorstep to Yours - Swift, Secure ',
                     ),
                   ],

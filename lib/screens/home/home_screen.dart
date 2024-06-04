@@ -17,9 +17,9 @@ import '../categories/categories.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
   final List images = [
-    'images/images3.jpg',
-    'images/images2.jpg',
-    'images/shoes.jpg'
+    'assets/images/images3.jpg',
+    'assets/images/images2.jpg',
+    'assets/images/shoes.jpg'
   ];
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                         Categories(
                           textColor: Colors.white,
                           title: 'show shoes',
-                          image: 'images/icons8-shoes-50.png',
+                          image: 'assets/images/icons8-shoes-50.png',
                           onTap: () {},
                         ),
                       ],

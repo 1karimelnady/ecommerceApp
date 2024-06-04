@@ -10,7 +10,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
   const PrimaryHeaderContainer({
     super.key,
     required this.child,
-    this.height = 340,
+    this.height = 370,
   });
   final Widget child;
   final double height;
