@@ -13,6 +13,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../common_widget/search_container.dart';
 import '../../cubit/application_state/main_states.dart';
 import '../../cubit/main_cubit.dart';
+import '../all_product/all_products.dart';
 import '../categories/categories.dart';
 
 @immutable
@@ -48,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.only(left: 24.0),
                           child: SectionHeading(
                             showActionButton: false,
@@ -81,7 +82,12 @@ class HomeScreen extends StatelessWidget {
                           height: 32,
                         ),
                         SectionHeading(
-                            title: 'Popular Products', textPressed: () {}),
+                          title: 'Popular Products',
+                          textPressed: () {
+                            RoutesManager.navigatorPush(
+                                context, const AllProductsScreen());
+                          },
+                        ),
                         const SizedBox(
                           height: 16,
                         ),

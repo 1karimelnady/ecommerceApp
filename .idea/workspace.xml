@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5738a70-002c-45a8-bfc9-9999a8d38579" name="Changes" comment="">
+    <list default="true" id="a5738a70-002c-45a8-bfc9-9999a8d38579" name="Changes" comment="sub categories">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/common_widget/custom_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common_widget/custom_appbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/AuthScreen/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/AuthScreen/login/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/AuthScreen/login/widgets/login_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/AuthScreen/login/widgets/login_header.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/Settings/settings_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/Settings/settings_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/categories/categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/categories/categories.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/checkout/checkout_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/checkout/checkout_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/checkout/widgets/billing_address_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/checkout/widgets/billing_address_section.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/home/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home/widget/product_card_horizontal.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/widget/product_card_horizontal.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/orders/order_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/order_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/orders/widgets/order_items.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/widgets/order_items.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/productDetails/product_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/productDetails/product_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/productDetails/widgets/bottom_add_to_cart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/productDetails/widgets/bottom_add_to_cart.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/productDetails/widgets/product_image_slider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/productDetails/widgets/product_image_slider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/productDetails/widgets/product_meta_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/productDetails/widgets/product_meta_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/rating_reviews/widgets/use_card_review.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/rating_reviews/widgets/use_card_review.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/success/success_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/success/success_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +25,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,6 +74,19 @@
       <option name="presentableId" value="Default" />
       <updated>1717572695594</updated>
     </task>
+    <task id="LOCAL-00001" summary="sub categories">
+      <option name="closed" value="true" />
+      <created>1717662536685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717662536685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sub categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="sub categories" />
   </component>
 </project>
