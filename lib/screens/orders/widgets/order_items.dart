@@ -1,13 +1,11 @@
 import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/common_widget/rounded_container.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
-class orderListItem extends StatelessWidget {
-  const orderListItem({super.key});
+class OrderListItem extends StatelessWidget {
+  const OrderListItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +14,7 @@ class orderListItem extends StatelessWidget {
       shrinkWrap: true,
       itemBuilder: (context, index) => RoundedContainer(
           showBorder: true,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           backgroundColor: isDark ? black : lightColor,
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -24,11 +22,11 @@ class orderListItem extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Iconsax.ship,
                     size: 16,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Expanded(
@@ -55,13 +53,13 @@ class orderListItem extends StatelessWidget {
                   ),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Iconsax.arrow_right_34,
                         size: 16,
                       ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Row(
@@ -69,11 +67,11 @@ class orderListItem extends StatelessWidget {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Iconsax.tag,
                           size: 16,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Expanded(
@@ -97,11 +95,11 @@ class orderListItem extends StatelessWidget {
                   Expanded(
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Iconsax.calendar,
                           size: 16,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Expanded(
@@ -126,7 +124,7 @@ class orderListItem extends StatelessWidget {
               ),
             ],
           )),
-      separatorBuilder: (context, index) => SizedBox(
+      separatorBuilder: (context, index) => const SizedBox(
         height: 16,
       ),
       itemCount: 10,

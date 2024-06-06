@@ -2,7 +2,6 @@ import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/common_widget/custom_appbar.dart';
 import 'package:ecommerce_app/common_widget/rounded_container.dart';
 import 'package:ecommerce_app/navigation_menu.dart';
-import 'package:ecommerce_app/screens/AuthScreen/Register/success_screen.dart';
 import 'package:ecommerce_app/screens/cart/widgets/cartt_items.dart';
 import 'package:ecommerce_app/screens/checkout/widgets/billing_address_section.dart';
 import 'package:ecommerce_app/screens/checkout/widgets/billing_amount_section.dart';
@@ -39,7 +38,7 @@ class CheckOutScreen extends StatelessWidget {
               const SizedBox(
                 height: 32,
               ),
-              CuponCode(),
+              const CuponCode(),
               const SizedBox(
                 height: 32,
               ),
@@ -76,7 +75,7 @@ class CheckOutScreen extends StatelessWidget {
                   title: 'Payment Successful',
                   subtitle: 'Your item will be shipped soon',
                   onPressed: () {
-                    RoutesManager.navigatorPush(context, NavigationMenu());
+                    RoutesManager.navigatorPush(context, const NavigationMenu());
                   },
                 ));
           },

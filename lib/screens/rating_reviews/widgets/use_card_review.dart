@@ -19,7 +19,7 @@ class UserCardReview extends StatelessWidget {
             Row(
               children: [
                 const CircleAvatar(
-                  backgroundImage: AssetImage("images/user-128.png"),
+                  backgroundImage: AssetImage("assets/images/user-128.png"),
                 ),
                 const SizedBox(
                   width: 8,

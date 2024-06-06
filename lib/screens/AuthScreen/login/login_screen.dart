@@ -11,10 +11,10 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = DeviceUtils.isDarkMode(context);
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(
+          padding: EdgeInsets.only(
             top: 56,
             left: 24,
             right: 24,
@@ -23,14 +23,14 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               LoginHeader(),
-              const LoginForm(),
-              const FormDivider(
+              LoginForm(),
+              FormDivider(
                 dividerText: 'sign in with',
               ),
-              const SizedBox(
+              SizedBox(
                 height: 10,
               ),
-              const SocialButton(),
+              SocialButton(),
             ],
           ),
         ),

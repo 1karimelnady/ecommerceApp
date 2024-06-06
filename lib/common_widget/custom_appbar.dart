@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? leadingPressed;
   @override
   Widget build(BuildContext context) {
+    final isDark = DeviceUtils.isDarkMode(context);
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: AppBar(
@@ -29,7 +31,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   onPressed: () {
                     RoutesManager.pop(context);
                   },
-                  icon: const Icon(Iconsax.arrow_left))
+                  icon: Icon(
+                    Iconsax.arrow_left,
+                    color: isDark ? white : darkColor,
+                  ))
               : null,
           title: title,
         ));

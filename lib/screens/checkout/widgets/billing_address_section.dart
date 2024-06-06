@@ -1,8 +1,6 @@
 import 'package:ecommerce_app/app_manager/local_data.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class BillingAddressSection extends StatelessWidget {
   const BillingAddressSection({super.key});
@@ -18,24 +16,24 @@ class BillingAddressSection extends StatelessWidget {
             bodyTitle: 'Change',
             textPressed: () {},
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
             'Coding with k',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.phone,
                 color: grey,
                 size: 16,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
               Text(
@@ -44,17 +42,17 @@ class BillingAddressSection extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.location_history,
                 color: grey,
                 size: 16,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
               Expanded(

@@ -100,7 +100,7 @@ class SettingScreen extends StatelessWidget {
                     title: 'My orders',
                     subTitle: 'In-progress and completed orders',
                     onTap: () {
-                      RoutesManager.navigatorPush(context, OrdersScreen());
+                      RoutesManager.navigatorPush(context, const OrdersScreen());
                     },
                   ),
                   const MenuListTile(

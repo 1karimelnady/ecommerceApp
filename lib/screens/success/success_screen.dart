@@ -28,7 +28,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                 repeat: true,
                 reverse: true,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               Text(
@@ -36,7 +36,7 @@ class PaymentSuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               Text(
@@ -44,13 +44,13 @@ class PaymentSuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: onPressed, child: Text('Continue')))
+                      onPressed: onPressed, child: const Text('Continue')))
             ],
           ),
         ),

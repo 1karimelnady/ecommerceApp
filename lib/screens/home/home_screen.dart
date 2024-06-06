@@ -1,9 +1,11 @@
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/screens/home/widget/carouselsliders.dart';
 import 'package:ecommerce_app/screens/home/widget/gird_layout.dart';
 import 'package:ecommerce_app/screens/home/widget/home_appbar.dart';
 import 'package:ecommerce_app/screens/home/widget/primary_header_container.dart';
 import 'package:ecommerce_app/screens/home/widget/product_card_vertical.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
+import 'package:ecommerce_app/screens/sub_categories/sub_categories_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
@@ -61,7 +63,11 @@ class HomeScreen extends StatelessWidget {
                           textColor: Colors.white,
                           title: 'show shoes',
                           image: 'assets/images/icons8-shoes-50.png',
-                          onTap: () {},
+                          onTap: () {
+                            RoutesManager.navigatorPush(
+                                context, SubCategoriesScreen());
+                            print('ddddddddd');
+                          },
                         ),
                       ],
                     ),

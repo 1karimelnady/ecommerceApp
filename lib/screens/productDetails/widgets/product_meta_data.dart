@@ -78,7 +78,7 @@ class ProductMetaData extends StatelessWidget {
         Row(
           children: [
             CircularImage(
-              imageUrl: 'images/icons8-shoes-50.png',
+              imageUrl: 'assets/images/icons8-shoes-50.png',
               width: 32,
               height: 32,
               overlayColor: isDark ? white : black,

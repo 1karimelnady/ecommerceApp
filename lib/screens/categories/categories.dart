@@ -30,7 +30,7 @@ class Categories extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return InkWell(
-            onTap: () {},
+            onTap: onTap,
             child: Padding(
               padding: const EdgeInsets.only(right: 16.0),
               child: Column(

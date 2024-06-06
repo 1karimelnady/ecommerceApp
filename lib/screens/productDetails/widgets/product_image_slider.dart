@@ -44,7 +44,7 @@ class ProductImageSlider extends StatelessWidget {
                     physics: const AlwaysScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemBuilder: (context, index) => CircularImage(
-                          imageUrl: "images/41S+9swCRBL._AC_SX522_.jpg",
+                          imageUrl: "assets/images/41S+9swCRBL._AC_SX522_.jpg",
                           backgroundColor: dark ? darkColor : white,
                           padding: const EdgeInsets.all(8),
                           width: 80,

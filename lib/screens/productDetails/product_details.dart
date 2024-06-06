@@ -23,7 +23,8 @@ class ProductDetail extends StatelessWidget {
           children: [
             const ProductImageSlider(),
             Padding(
-              padding: const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 24.0),
+              padding:
+                  const EdgeInsets.only(left: 24.0, right: 24.0, bottom: 24.0),
               child: Column(
                 children: [
                   const RatingAndShare(),
@@ -51,7 +52,7 @@ class ProductDetail extends StatelessWidget {
                   ),
                   const ReadMoreText(
                     'This is the Product Description for Blue Nike Sleeve less vest. '
-                    'There are more things that can be added but i am just practicing and nothing else ,thanks',
+                    'There are more things that can be added but i am just practicing and nothing else ,thanks ',
                     trimMode: TrimMode.Line,
                     trimLines: 2,
                     trimCollapsedText: 'Show more',

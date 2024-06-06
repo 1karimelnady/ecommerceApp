@@ -21,7 +21,7 @@ class LoginHeader extends StatelessWidget {
           reverse: true,
           fit: BoxFit.contain,
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
         Text(

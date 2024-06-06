@@ -15,9 +15,9 @@ class OrdersScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(24.0),
-        child: orderListItem(),
+      body: const Padding(
+        padding: EdgeInsets.all(24.0),
+        child: OrderListItem(),
       ),
     );
   }

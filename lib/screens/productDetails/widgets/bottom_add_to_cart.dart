@@ -21,45 +21,48 @@ class BottomAddToCart extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              CircularIcon(
-                icon: Iconsax.minus,
-                width: 40,
-                onPressed: () {},
-                height: 40,
-                backgroundColor: darkGrey,
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 16,
-              ),
-              Text(
-                '2',
-                style: Theme.of(context).textTheme.titleSmall,
-              ),
-              const SizedBox(
-                width: 16,
-              ),
-              CircularIcon(
-                icon: Iconsax.add,
-                width: 40,
-                onPressed: () {},
-                height: 40,
-                backgroundColor: Colors.black,
-                color: Colors.white,
-              ),
-              const SizedBox(
-                width: 111,
-              ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      side: const BorderSide(color: black),
-                      padding: const EdgeInsets.all(16),
-                      backgroundColor: black),
+          Flexible(
+            fit: FlexFit.loose,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                CircularIcon(
+                  icon: Iconsax.minus,
+                  width: 40,
                   onPressed: () {},
-                  child: const Text('Add to Cart'))
-            ],
+                  height: 40,
+                  backgroundColor: darkGrey,
+                  color: Colors.white,
+                ),
+                const SizedBox(
+                  width: 16,
+                ),
+                Text(
+                  '2',
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+                const SizedBox(
+                  width: 16,
+                ),
+                CircularIcon(
+                  icon: Iconsax.add,
+                  width: 40,
+                  onPressed: () {},
+                  height: 40,
+                  backgroundColor: Colors.black,
+                  color: Colors.white,
+                ),
+                Spacer(),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        side: const BorderSide(color: black),
+                        padding: const EdgeInsets.all(16),
+                        backgroundColor: black),
+                    onPressed: () {},
+                    child: const Text('Add to Cart'))
+              ],
+            ),
           ),
         ],
       ),
