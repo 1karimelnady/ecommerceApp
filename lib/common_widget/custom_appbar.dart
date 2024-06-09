@@ -35,10 +35,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     Iconsax.arrow_left,
                     color: isDark ? white : darkColor,
                   ))
-              : leadingIcon != null
-                  ? IconButton(
-                      onPressed: leadingPressed, icon: Icon(leadingIcon))
-                  : null,
+              : null,
           title: title,
         ));
   }

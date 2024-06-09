@@ -1,14 +1,16 @@
 import 'package:ecommerce_app/app_manager/local_data.dart';
+import 'package:ecommerce_app/app_manager/routes_manager.dart';
 import 'package:ecommerce_app/common_widget/custom_appbar.dart';
 import 'package:ecommerce_app/common_widget/search_container.dart';
+import 'package:ecommerce_app/screens/categories/category_tap.dart';
 import 'package:ecommerce_app/screens/home/widget/gird_layout.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
-import 'package:ecommerce_app/screens/categories/category_tap.dart';
 import 'package:ecommerce_app/utilites/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
-import '../brand/brand_card.dart';
 import '../../common_widget/cart_counter.dart';
+import '../all_brand/all_brand.dart';
+import '../brand/brand_card.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -55,7 +57,10 @@ class StoreScreen extends StatelessWidget {
                       ),
                       SectionHeading(
                         title: 'Featured Brands',
-                        textPressed: () {},
+                        textPressed: () {
+                          RoutesManager.navigatorPush(
+                              context, AllBrandScreen());
+                        },
                       ),
                       const SizedBox(
                         height: 16 / 1.5,
