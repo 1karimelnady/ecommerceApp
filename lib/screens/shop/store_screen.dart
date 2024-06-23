@@ -59,7 +59,7 @@ class StoreScreen extends StatelessWidget {
                         title: 'Featured Brands',
                         textPressed: () {
                           RoutesManager.navigatorPush(
-                              context, AllBrandScreen());
+                              context, const AllBrandScreen());
                         },
                       ),
                       const SizedBox(

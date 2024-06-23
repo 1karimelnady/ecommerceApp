@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "116655316735",
+    "project_id": "flutter-project-4f196",
+    "storage_bucket": "flutter-project-4f196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116655316735:android:fd678c6aa2b528f11d36ca",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116655316735-jjq9hb0mom2o3s7l0a0dnumveipu7o6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Z5NT5DodswpORuO189ePyVWmK13I0ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116655316735-7q0qi84b8rv726n3jdspv49rjpqpin7s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "116655316735-5l7mbp24hh28fj3v8g3or8p8jegmjnh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.udemy.app.flutterProject"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116655316735:android:e6439b0b93c04e261d36ca",
+        "android_client_info": {
+          "package_name": "com.udemy.app.flutter_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116655316735-3rqqbrs63o167gb61crmgsej3mf7egvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udemy.app.flutter_project",
+            "certificate_hash": "84690f1f4e8475fcb745ab48e09ef76c6c56a111"
+          }
+        },
+        {
+          "client_id": "116655316735-jjq9hb0mom2o3s7l0a0dnumveipu7o6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Z5NT5DodswpORuO189ePyVWmK13I0ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116655316735-7q0qi84b8rv726n3jdspv49rjpqpin7s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "116655316735-5l7mbp24hh28fj3v8g3or8p8jegmjnh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.udemy.app.flutterProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,7 @@ class SortableProducts extends StatelessWidget {
     return Column(
       children: [
         DropdownButtonFormField(
-          decoration: InputDecoration(prefixIcon: Icon(Iconsax.sort)),
+          decoration: const InputDecoration(prefixIcon: Icon(Iconsax.sort)),
           items: [
             'Name',
             'Higher Price',
@@ -24,18 +24,18 @@ class SortableProducts extends StatelessWidget {
             'Popularity'
           ]
               .map((option) => DropdownMenuItem(
-                    child: Text(option),
                     value: option,
+                    child: Text(option),
                   ))
               .toList(),
           onChanged: (value) {},
         ),
-        SizedBox(
+        const SizedBox(
           height: 32,
         ),
         GirdLayout(
           itemCount: 8,
-          itemBuilder: (BuildContext, int) => ProductCardVertical(),
+          itemBuilder: (BuildContext, int) => const ProductCardVertical(),
         )
       ],
     );

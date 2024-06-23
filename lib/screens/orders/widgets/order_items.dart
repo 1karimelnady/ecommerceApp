@@ -52,11 +52,12 @@ class OrderListItem extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Iconsax.arrow_right_34,
-                        size: 16,
-                      ))
+                    onPressed: () {},
+                    icon: const Icon(
+                      Iconsax.arrow_right_34,
+                      size: 16,
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(

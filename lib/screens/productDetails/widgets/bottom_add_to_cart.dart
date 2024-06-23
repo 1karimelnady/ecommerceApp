@@ -53,7 +53,7 @@ class BottomAddToCart extends StatelessWidget {
                   backgroundColor: Colors.black,
                   color: Colors.white,
                 ),
-                Spacer(),
+                const Spacer(),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         side: const BorderSide(color: black),

@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 24.0),
                           child: SectionHeading(
                             showActionButton: false,
@@ -66,8 +66,7 @@ class HomeScreen extends StatelessWidget {
                           image: 'assets/images/icons8-shoes-50.png',
                           onTap: () {
                             RoutesManager.navigatorPush(
-                                context, SubCategoriesScreen());
-                            print('ddddddddd');
+                                context, const SubCategoriesScreen());
                           },
                         ),
                       ],

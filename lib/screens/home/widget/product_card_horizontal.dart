@@ -30,7 +30,7 @@ class ProductCardHorizontal extends StatelessWidget {
           RoundedContainer(
             height: 120,
             backgroundColor: dark ? darkColor : white,
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             margin: EdgeInsets.zero,
             child: Stack(
               children: [
@@ -89,26 +89,26 @@ class ProductCardHorizontal extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TitleText(
                         title: 'Green Nike Air Shoes',
                         smallSize: true,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 8,
                       ),
-                      const BrandTitleVerifiedIcon(
+                      BrandTitleVerifiedIcon(
                         title: 'Nike',
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Flexible(
+                      const Flexible(
                           child: PriceText(price: '256.0', isLarge: false)),
                       Container(
                           decoration: const BoxDecoration(

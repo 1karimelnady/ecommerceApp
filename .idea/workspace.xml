@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5738a70-002c-45a8-bfc9-9999a8d38579" name="Changes" comment="all products">
-      <change afterPath="$PROJECT_DIR$/lib/screens/all_brand/all_brand.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/all_brand/brand_products.dart" afterDir="false" />
+    <list default="true" id="a5738a70-002c-45a8-bfc9-9999a8d38579" name="Changes" comment="brands">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common_widget/custom_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common_widget/custom_appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/all_brand/all_brand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/all_brand/all_brand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/all_brand/brand_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/all_brand/brand_products.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/all_product/all_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/all_product/all_products.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/all_product/widgets/sortable_products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/all_product/widgets/sortable_products.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home/widget/product_card_horizontal.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home/widget/product_card_horizontal.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders/widgets/order_items.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders/widgets/order_items.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/productDetails/widgets/bottom_add_to_cart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/productDetails/widgets/bottom_add_to_cart.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/shop/store_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/shop/store_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/sub_categories/sub_categories_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/sub_categories/sub_categories_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utilites/themes/custom_themes/checkbox_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utilites/themes/custom_themes/checkbox_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +110,32 @@
       <option name="project" value="LOCAL" />
       <updated>1717671462681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="brands">
+      <option name="closed" value="true" />
+      <created>1717918762390</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717918762390</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sub categories" />
     <MESSAGE value="all products" />
-    <option name="LAST_COMMIT_MESSAGE" value="all products" />
+    <MESSAGE value="brands" />
+    <option name="LAST_COMMIT_MESSAGE" value="brands" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/main.dart</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

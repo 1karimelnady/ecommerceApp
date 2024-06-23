@@ -2,9 +2,7 @@ import 'package:ecommerce_app/common_widget/custom_appbar.dart';
 import 'package:ecommerce_app/screens/home/widget/product_card_horizontal.dart';
 import 'package:ecommerce_app/screens/home/widget/rounded_image.dart';
 import 'package:ecommerce_app/screens/home/widget/section_heading.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SubCategoriesScreen extends StatelessWidget {
   const SubCategoriesScreen({super.key});
@@ -21,7 +19,7 @@ class SubCategoriesScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24),
           child: Column(
             children: [
               RoundedImage(
@@ -29,7 +27,7 @@ class SubCategoriesScreen extends StatelessWidget {
                 applyImageRadius: true,
                 width: double.infinity,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 32,
               ),
               Column(
@@ -39,15 +37,15 @@ class SubCategoriesScreen extends StatelessWidget {
                     textPressed: () {},
                     showActionButton: true,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   SizedBox(
                     height: 120,
                     child: ListView.separated(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) => ProductCardHorizontal(),
-                      separatorBuilder: (context, index) => SizedBox(
+                      itemBuilder: (context, index) => const ProductCardHorizontal(),
+                      separatorBuilder: (context, index) => const SizedBox(
                         width: 16,
                       ),
                       itemCount: 4,

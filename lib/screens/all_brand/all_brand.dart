@@ -21,14 +21,14 @@ class AllBrandScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24),
           child: Column(
             children: [
-              SectionHeading(
+              const SectionHeading(
                 title: 'Brands',
                 showActionButton: false,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
               GirdLayout(
@@ -37,9 +37,10 @@ class AllBrandScreen extends StatelessWidget {
                   itemBuilder: (context, index) => BrandCard(
                         showBorder: true,
                         onTap: () {
-                          RoutesManager.navigatorPush(context, BrandProducts());
+                          RoutesManager.navigatorPush(
+                              context, const BrandProducts());
                         },
-                      ))
+                      )),
             ],
           ),
         ),

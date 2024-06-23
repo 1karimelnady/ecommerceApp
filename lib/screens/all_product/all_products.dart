@@ -11,11 +11,11 @@ class AllProductsScreen extends StatelessWidget {
       appBar: CustomAppBar(
         showBackArrow: true,
         title: Text(
-          'Pobular Products',
+          'Popular Products',
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(24),
           child: SortableProducts(),
